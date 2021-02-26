@@ -11,10 +11,11 @@ metadata:
 spec:
   tls:
     - hosts:
-        - cloudtest.ddns.net
-      secretName: cloudtest-ddns-net
+        - gcpcloudtest2.ddns.net
+      secretName: gcpcloudtest2-ddns-net
   rules:
-    - http:
+    - host: gcpcloudtest2.ddns.net
+      http:
         paths:
           - path: /?(.*)
           # UPDATE THIS LINE ABOVE
